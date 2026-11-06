@@ -4,8 +4,6 @@ library("varhandle")
 library("stringr")
 library("stringi")
 library("readr")
-##CHANGE -> search for this to find the sections where the file names need to be changed
-##PARAMETER-> search for this to find all the specific parameters set
 
 #Reading in the pairwise sample comparisons from the Majiq analysis
 
