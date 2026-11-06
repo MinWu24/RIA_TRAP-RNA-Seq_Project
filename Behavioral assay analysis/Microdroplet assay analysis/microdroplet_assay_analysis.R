@@ -16,7 +16,7 @@ library(car)
 # Set Strain as factor with specific levels
 assay$Strain <- factor(assay$Strain, levels = c("N2", "mutant"))
 
-# Your model
+# linear-mixed model
 model_final <- lmer(Learning_index ~ Strain + (1 | Date), 
                     data = assay,
                     control = lmerControl(optimizer = "bobyqa"))
