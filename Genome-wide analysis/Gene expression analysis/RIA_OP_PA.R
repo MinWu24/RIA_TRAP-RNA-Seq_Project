@@ -1,6 +1,5 @@
 library(edgeR)
 
-
 RIA_PA= read.table("RIA_OP_PA_matrix.csv", sep = ",", row.name = "Gene", header=TRUE)
 str(RIA_PA)
 
@@ -39,4 +38,3 @@ write.table(RIA_PA.all, file = "DE_RIA_OP_PA.csv", append = FALSE, quote = FALSE
 
 y.RIA_PA <- cpm(cNorm.RIA_PA, prior.count=2, log=TRUE)
 head(y.RIA_PA)
-
