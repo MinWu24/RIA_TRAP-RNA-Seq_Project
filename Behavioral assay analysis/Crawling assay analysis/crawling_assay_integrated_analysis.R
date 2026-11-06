@@ -24,7 +24,6 @@ df$UALS <- df$response_score * (1 - df$navigation_index)
 df$UALS_scaled <- (df$UALS - min(df$UALS, na.rm=TRUE)) / 
   (max(df$UALS, na.rm=TRUE) - min(df$UALS, na.rm=TRUE))
 
-
 # ============================================
 # STEP 2: CALCULATE NAIVE MEANS (METHOD 1 - SAFE)
 # ============================================
