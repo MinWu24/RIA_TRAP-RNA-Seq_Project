@@ -7,9 +7,6 @@ str(assay)
 assay$Strain = factor(assay$Strain, levels = c("N2","mutant"))
 levels(assay$Strain)
 
-N2=assay[assay$Strain=="N2",]
-str(N2)
-
 # Load required libraries
 library(lme4)
 library(ggplot2)
