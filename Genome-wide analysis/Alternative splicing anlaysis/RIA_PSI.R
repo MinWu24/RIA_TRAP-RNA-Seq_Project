@@ -4,8 +4,6 @@ library("varhandle")
 library("stringr")
 library("stringi")
 library("readr")
-##CHANGE -> search for this to find the sections where the file names need to be changed
-##PARAMETER-> search for this to find all the specific parameters set
 
 one_tissue <- read.table(file = 'op.psi.tsv', sep = '\t', na.strings = c("", " ", "NA"), header = TRUE, stringsAsFactors = FALSE)
 
@@ -14,8 +12,6 @@ sample_name<- "op"
 #sample_name<- "pa"
 #sample_name<- "gacA"
 #sample_name<- "pak"
-
-
 
 #function taking the PSI Majiq file and removing junctions from each LSV with 0.05<=meanPSI<=0.95, re-counting
 # Num.junctions and Num.exons; also removing IR events (they are filtered separately)
